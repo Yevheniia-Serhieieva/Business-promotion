@@ -19,7 +19,7 @@
             </a>
             <nav class="header-nav">
                 <ul class="header-nav-list">
-                    <li><a class="header-nav-link" href="./index.html">Product</a></li>
+                    <li><a class="header-nav-link header-nav-link-active" href="./index.html">Product</a></li>
                     <li><a class="header-nav-link" href="./pricing.html">Pricing</a></li>
                     <li><a class="header-nav-link" href="./customer.html">Customers</a></li>
                     <li><a class="header-nav-link" href="">Resources</a></li>
@@ -43,8 +43,16 @@
                         Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.
                     </p>
                     <ul class="hero-list">
-                        <li><button class="hero-btn-start" type="button">Get started</button></li>
-                        <li><button class="hero-btn-video" type="button">Watch the Video</button></li>
+                        <li>
+                            <button class="hero-btn-start" 
+                            type="button">Get started</button></li>
+                        <li>
+                            <button class="hero-btn-video" 
+                            type="button">
+                            <svg class="hero-btn-video-svg" width="16" height="18">
+                                <use href="./images/icons.svg#icon-triangle"></use>
+                            </svg>
+                            Watch the Video</button></li>
                     </ul>
                 </div>
                 <img src="./images/hero-img.svg" alt="" width="610" height="555">
@@ -57,32 +65,41 @@
                 <h2 class="built-title">Product  was Built Specifically for You</h2>
                 <ul class="built-list">
                     <li class="built-item">
-                        <img src="./images/icon-1.svg" alt="Icon 1">
-                        <div class="built-item-box">
-                            <h3 class="built-item-title">First click tests</h3>
-                            <p class="built-item-text">While most people enjoy casino gambling,</p>
+                        <div class="built-item-svg">
+                            <svg width="11" height="18">
+                                <use href="./images/icons.svg#icon-cursor"></use>
+                            </svg>
                         </div>
+                        <h3 class="built-item-title">First click tests</h3>
+                        <p class="built-item-text">While most people enjoy casino gambling,</p>
+                       
                     </li>
                     <li class="built-item">
-                        <img src="./images/icon-2.svg" alt="Icon 2">
-                        <div class="built-item-box">
-                            <h3 class="built-item-title">Design surveys</h3>
-                            <p class="built-item-text">Sports betting, lottery and bingo playing for the fun</p>
+                        <div class="built-item-svg">
+                            <svg width="18" height="18">
+                                <use href="./images/icons.svg#icon-wave"></use>
+                            </svg>
                         </div>
+                        <h3 class="built-item-title">Design surveys</h3>
+                        <p class="built-item-text">Sports betting, lottery and bingo playing for the fun</p>
                     </li>
                     <li class="built-item">
-                        <img src="./images/icon-3.svg" alt="Icon 3">
-                        <div class="built-item-box">
-                            <h3 class="built-item-title">Preference tests</h3>
-                            <p class="built-item-text">The Myspace page defines the individual.</p>
+                        <div class="built-item-svg">
+                            <svg width="16" height="18">
+                                <use href="./images/icons.svg#icon-heart"></use>
+                            </svg>
                         </div>
+                        <h3 class="built-item-title">Preference tests</h3>
+                        <p class="built-item-text">The Myspace page defines the individual.</p>
                     </li>
                     <li class="built-item">
-                        <img src="./images/icon-4.svg" alt="Icon 4">
-                        <div class="built-item-box">
-                            <h3 class="built-item-title">Five second tests</h3>
-                            <p class="built-item-text">Personal choices and the overall personality of the person. </p>
+                        <div class="built-item-svg">
+                            <svg width="14" height="18">
+                                <use href="./images/icons.svg#icon-clock"></use>
+                            </svg>
                         </div>
+                        <h3 class="built-item-title">Five second tests</h3>
+                        <p class="built-item-text">Personal choices and the overall personality of the person. </p>
                     </li>
                 </ul>
                 <button class="built-btn" type="button">SIGN UP NOW</button>
@@ -127,19 +144,40 @@
                             </p>
                             <ul class="support-list">
                                 <li class="support-item">
-                                    <p class="support-text">
-                                        Never worry about overpaying for your energy again.
-                                    </p>
+                                    <div class="support-item-box">
+                                        <div class="support-item-svg">
+                                            <svg class="support-svg"  width="17" height="12">
+                                                <use href="./images/icons.svg#icon-tick"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="support-text">
+                                            Never worry about overpaying for your energy again.
+                                        </p>
+                                    </div>
                                 </li>
                                 <li class="support-item">
-                                    <p class="support-text">
-                                        We will only switch you to energy companies that we trust and will treat you right
-                                    </p>
+                                    <div class="support-item-box">
+                                        <div class="support-item-svg">
+                                            <svg class="support-svg"  width="17" height="12">
+                                                <use href="./images/icons.svg#icon-tick"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="support-text">
+                                            We will only switch you to energy companies that we trust and will treat you right
+                                        </p>
+                                    </div>
                                 </li>
                                 <li class="support-item">
-                                    <p class="support-text">
-                                        We track the markets daily and know where the savings are.
-                                    </p>
+                                    <div class="support-item-box">
+                                        <div class="support-item-svg">
+                                            <svg class="support-svg" width="17" height="12">
+                                                <use href="./images/icons.svg#icon-tick"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="support-text">
+                                            We track the markets daily and know where the savings are.
+                                        </p>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -181,19 +219,19 @@
                 </p>
                 <ul class="process-list">
                     <li class="process-item">
-                        <img class="process-img-one" src="./images/1avatar.jpg" alt="avatar 1" width="98">
+                        <img src="./images/1avatar.jpg" alt="avatar 1" width="98">
                         <p class="process-item-text">I can take care of your pitch</p>
                     </li>
                     <li class="process-item">
                         <p class="process-item-text">I can prototype your app</p>
-                        <img class="process-img-two" src="./images/2avatar.jpg" alt="avatar 2" width="98">
+                        <img src="./images/2avatar.jpg" alt="avatar 2" width="98">
                     </li>
                     <li class="process-item">
                         <p class="process-item-text">I can take care of your pitch</p>
-                        <img class="process-img-three" src="./images/3avatar.jpg" alt="avatar 3" width="98">
+                        <img  src="./images/3avatar.jpg" alt="avatar 3" width="98">
                     </li>
                     <li class="process-item">
-                        <img class="process-img-four" src="./images/4avatar.jpg" alt="avatar 4" width="98">
+                        <img src="./images/4avatar.jpg" alt="avatar 4" width="98">
                         <p class="process-item-text">I can help marketing strategy</p>
                     </li>
                 </ul>
@@ -202,110 +240,179 @@
          </section>
 
          <!-- Contents Strategies -->
-          <section>
-            <h2>Contents Strategies</h2>
-            <p>
-                We focus on ergonomics and meeting you where you work. It's only a keystroke away. 
-            </p>
-            <ul>
-                <li>
-                    <img src="./images/1image.jpg" alt="image 1" width="350" height="185">
-                    <p>By Wahid Ari |  03 March 2019</p>
-                    <h3>Increasing Prosperity With Positive Thinking</h3>
-                </li>
-                <li>
-                    <img src="./images/2image.jpg" alt="image 2" width="350" height="185">
-                    <p>By Wahid Ari | 03 March 2019</p>
-                    <h3>Motivation Is The First Step To Success</h3>
-                </li>
-                <li>
-                    <img src="./images/3image.jpg" alt="image 3" width="350" height="185">
-                    <p>By Wahid Ari | 03 March 2019</p>
-                    <h3>Success Steps For Your Personal Or Business</h3>
-                </li>
-            </ul>
+          <section class="strategies">
+            <div class="container strategies-container">
+                <h2 class="strategies-title">Contents Strategies</h2>
+                <p class="strategies-text">
+                    We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+                </p>
+                <ul class="strategies-list">
+                    <li class="strategies-item">
+                        <img src="./images/1image.jpg" 
+                            alt="image 1" 
+                            width="350" 
+                            height="185">
+                        <p class="strategies-item-text">By <span>Wahid Ari</span> |  03 March 2019</p>
+                        <h3 class="strategies-item-title">Increasing Prosperity With Positive Thinking</h3>
+                    </li>
+                    <li class="strategies-item">
+                        <img src="./images/2image.jpg" 
+                            alt="image 2" 
+                            width="350" 
+                            height="185">
+                        <p class="strategies-item-text">By Wahid Ari | 03 March 2019</p>
+                        <h3 class="strategies-item-title">Motivation Is The First Step To Success</h3>
+                    </li>
+                    <li class="strategies-item">
+                        <img src="./images/3image.jpg" 
+                            alt="image 3" 
+                            width="350" 
+                            height="185">
+                        <p class="strategies-item-text">By Wahid Ari | 03 March 2019</p>
+                        <h3 class="strategies-item-title">Success Steps For Your Personal Or Business</h3>
+                    </li>
+                </ul>
+            </div>
           </section>
 
           <!-- Price Table -->
-        <section>
-            <h2>Price Table</h2>
-            <p>We offer competitive price</p>
-            <ul>
-                <li>
-                    <h3>Free</h3>
-                    <p>Brief price description</p>
-                    <p>0$ Per / month</p>
-                    <ul>
-                        <li>Only 2 Operators</li>
-                        <li>Notifications</li>
-                        <li>Landing Pages</li>
-                    </ul>
-                    <button type="button">Order Now</button>
-                </li>
-                <li>
-                    <h3>Standard</h3>
-                    <p>Brief price description</p>
-                    <p>5$ Per / month</p>
-                    <ul>
-                        <li>5+ Operators</li>
-                        <li>Notifications</li>
-                        <li>Landing Pages</li>
-                    </ul>
-                    <button type="button">Order Now</button>
-                </li>
-                <li>
-                    <h3>Premium</h3>
-                    <p>Brief price description</p>
-                    <p>10$ Per / month</p>
-                    <ul>
-                        <li>10+ Operators</li>
-                        <li>Notifications</li>
-                        <li>Landing Pages</li>
-                    </ul>
-                    <button type="button">Order Now</button>
-                </li>
-            </ul>
+        <section class="price">
+            <div class="container price-container">
+                <h2 class="price-title">Price Table</h2>
+                <p class="price-text">We offer competitive price</p>
+                <ul class="price-list">
+                    <li class="price-item">
+                        <div class="price-box">
+                            <h3 class="price-item-title">Free</h3>
+                            <p class="price-item-text">Brief price description</p>
+                            <p class="price-item-price">
+                                <div class="price-item-price-wrap">
+                                    <span class="price-item-span-num">0</span>
+                                    <div class="price-item-price-box">
+                                        <span class="price-item-span-dol">$</span>
+                                        Per / month
+                                    </div>
+                                </div>
+                            </p>
+                            <ul class="price-item-list">
+                                <li class="price-item-textbox">Only 2 Operators</li>
+                                <li class="price-item-textbox">Notifications</li>
+                                <li class="price-item-textbox">Landing Pages</li>
+                            </ul>
+                            <button class="price-btn" type="button">Order Now</button>
+                        </div>
+                    </li>
+                    <li class="price-item">
+                        <div class="price-box">
+                            <h3 class="price-item-title">Standard</h3>
+                            <p class="price-item-text">Brief price description</p>
+                            <p class="price-item-price">
+                                <div class="price-item-price-wrap">
+                                    <span class="price-item-span-num">5</span>
+                                    <div class="price-item-price-box">
+                                        <span class="price-item-span-dol">$</span>
+                                        Per / month
+                                    </div>
+                                </div>
+                            </p>
+                            <ul class="price-item-list">
+                                <li class="price-item-textbox">5+ Operators</li>
+                                <li class="price-item-textbox">Notifications</li>
+                                <li class="price-item-textbox">Landing Pages</li>
+                            </ul>
+                            <button class="price-btn" type="button">Order Now</button>
+                        </div>
+                    </li>
+                    <li class="price-item">
+                        <div class="price-box">
+                            <h3 class="price-item-title">Premium</h3>
+                            <p class="price-item-text">Brief price description</p>
+                            <p class="price-item-price">
+                                <div class="price-item-price-wrap">
+                                    <span class="price-item-span-num">10</span>
+                                    <div class="price-item-price-box">
+                                        <span class="price-item-span-dol">$</span>
+                                        Per / month
+                                    </div>
+                                </div>
+                            </p>
+                            <ul class="price-item-list">
+                                <li class="price-item-textbox">10+ Operators</li>
+                                <li class="price-item-textbox">Notifications</li>
+                                <li class="price-item-textbox">Landing Pages</li>
+                            </ul>
+                            <button class="price-btn" type="button">Order Now</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- What Clients Say -->
-         <section>
-<h2>What Clients Say</h2>
-<p>
-    Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics 
-</p>
-<ul>
-    <li>
-        <img src="./images/stars.svg" alt="stars">
-        <p>
-            Product helps you see how many more days you need to work to reach your financial goal.
-        </p>
-        <img src="./images/Designer.jpg" alt="Wahid Ari">
-        <h3>Wahid Ari</h3>
-        <p>Designer</p>
-    </li>
-    <li>
-        <img src="./images/stars.svg" alt="stars">
-        <p>
-            Product helps you see how many more days you need to work to reach your financial goal.
-        </p>
-        <img src="./images/2Designer.jpg" alt="Wahid Ari">
-        <h3>Wahid Ari</h3>
-        <p>Designer</p>
-    </li>
-    <li>
-        <img src="./images/stars.svg" alt="stars">
-        <p>
-            Product helps you see how many more days you need to work to reach your financial goal.
-        </p>
-        <img src="./images/3Designer.jpg" alt="Wahid Ari">
-        <h3>Wahid Ari</h3>
-        <p>Designer</p>
-    </li>
-</ul>
+         <section class="client">
+            <div class="container client-container">
+                <h2 class="client-title">What Clients Say</h2>
+                <p class="client-text">
+                    Problems trying to resolve the conflict between <br> the two major realms of Classical physics: Newtonian mechanics
+                </p>
+                <ul class="client-list">
+                    <li class="client-item">
+                        <div class="client-item-box">
+                            <svg width="106" height="18">
+                                <use href="./images/icons.svg#icon-stars"></use>
+                            </svg>
+                            <p class="client-item-text-main">
+                                Product helps you see how many more days you need to work to reach your financial goal.
+                            </p>
+                            <div class="client-item-wrap">
+                                <img src="./images/Designer.jpg" alt="Wahid Ari" width="50" height="50">
+                                <div class="client-item-wrap-box">
+                                    <h3 class="client-item-title">Wahid Ari</h3>
+                                    <p class="client-item-text">Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="client-item">
+                        <div class="client-item-box">
+                            <svg width="106" height="18">
+                                <use href="./images/icons.svg#icon-stars"></use>
+                            </svg>
+                            <p class="client-item-text-main">
+                                Product helps you see how many more days you need to work to reach your financial goal.
+                            </p>
+                            <div class="client-item-wrap">
+                                <img src="./images/2Designer.jpg" alt="Wahid Ari" width="50" height="50">
+                                <div class="client-item-wrap-box">
+                                    <h3 class="client-item-title">Wahid Ari</h3>
+                                    <p class="client-item-text">Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="client-item">
+                        <div class="client-item-box">
+                            <svg width="106" height="18">
+                                <use href="./images/icons.svg#icon-stars"></use>
+                            </svg>
+                            <p class="client-item-text-main">
+                                Product helps you see how many more days you need to work to reach your financial goal.
+                            </p>
+                            <div class="client-item-wrap">
+                                <img src="./images/3Designer.jpg" alt="Wahid Ari" width="50" height="50">
+                                <div class="client-item-wrap-box">
+                                    <h3 class="client-item-title">Wahid Ari</h3>
+                                    <p class="client-item-text">Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
          </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div>
             <p>
                 Join 100 Compannies who boost their business with Product
@@ -314,21 +421,37 @@
             <img src="./images/graphics.png" alt="Graphics">
         </div>
         <div>
-            <a href="">
-                <img src="./images/logo.svg" alt="Logo" width="40" height="36">
-                Product
-            </a>
-            <ul>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="./images/item-1.png" alt="Instagram">
-                </a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="./images/item-2.png" alt="Facebook">
-                </a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="./images/item-3.png" alt="Twiter">
-                </a></li>
-            </ul>
+            <div class="socials">
+                <a href="./index.html" class="header-logo footer-logo">
+                    <img src="./images/logo.svg" alt="Logo" width="40" height="36">
+                    Product
+                </a>
+                <div class="socials-list">
+                    <ul>
+                        <li class="socialc-item">
+                                <a href="http://" target="_blank" aria-label="instagram-link" rel="noopener noreferrer">
+                                <svg width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                                </a>
+                        </li>
+                        <li class="socialc-item">
+                                <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <svg width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                                </a>
+                        </li>
+                        <li class="socialc-item">
+                                <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <svg width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                                </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <p>Resource</p>
             <ul>
                 <li><a href="">About Us</a></li>
@@ -342,13 +465,20 @@
                 <li><a href="">Financing</a></li>
                 <li><a href="">Privacy Policy</a></li>
             </ul>
-            <p>
-                knowing you're always on the best energy deal. 
-            </p>
-            <img src="./images/mobile-screen.svg" alt="mobile-screen">
-            <form action="">Enter your phone number
-                <button type="submit">Sign up Now</button>
-                </form>   
+            <div class="footer-form">
+                <p class="footer-form-text">
+                    knowing you're always on the best energy deal.
+                </p>
+                <form>
+                        <label for="user-phone">
+                            <input type="tel" name="user-phone" placeholder="Enter your phone number">
+                            <svg class="svg" width="18" height="28">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </label>
+                    <button class="footer-btn" type="submit">Sign up Now</button>
+                </form>
+            </div> 
         </div>
     </footer>
 </body>
