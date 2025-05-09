@@ -331,6 +331,10 @@ gap: 30px;
 }
 
 .support-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 450px;
 }
 
 .support-item {
@@ -349,12 +353,12 @@ gap: 30px;
     font-size: 16px;
     line-height: 1.62;
     color: #22343d;
-    margin-bottom: 25px;
 }
 
 .support-item-box {
     display: flex;
-    max-width: 450px;
+    gap: 30px;
+    align-items: center;
 }
 
 .support-item-svg {
@@ -365,12 +369,10 @@ gap: 30px;
     width: 35px;
     height: 35px;
     fill: #fff;
-    margin-right: 30px;
 }
 
-.support-svg {
-    width: 17px;
-    height: 12px;
+.support-item-box-text {
+    max-width: 385px;
 }
 
 .support-item:nth-child(1) .support-item-svg  {
@@ -772,18 +774,147 @@ gap: 30px;
     color: #252b42;
 }
 
+/* footer */
 
+.footer {
+    padding: 100px 145px 40px 145px;
+}
 
+.footer-container {
 
+}
 
+.footer-box {
+    display: flex;
+    max-width: 968px;
+    border-radius: 32px;
+    background: #02897a;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.footer-box-item {
+    display: flex;
+    flex-direction: column;
+}
 
+.footer-box-text {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.51;
+    color: #fff;
+    max-width: 510px;
+    margin: 49px 10px 46px 51px;
+}
+
+.footer-box-btn {
+    border-radius: 8px;
+    width: 150px;
+    height: 50px;
+    background: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    color: #02897a;
+    display: block;
+    margin-left: 51px;
+    margin-bottom: 56px;
+}
+
+.footer-wrap {
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-wrap-socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-right: 146px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 93%;
+    color: #173a56;
+    margin-bottom: 18px;
+}
+
+.footer-wrap-socials-list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-wrap-socials-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    stroke: #02897a;   
+    fill: transparent;
+    background-color: #edfffc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-wrap-resource {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-right: 129px;
+}
+
+.footer-wrap-resource-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #22343d;
+}
+
+.footer-wrap-resource-list {
+    
+}
+
+.footer-wrap-resource-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2.19;
+    color: #22343d;
+}
+
+.footer-wrap-stuff {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-right: 83px;
+}
+
+.footer-wrap-stuff-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #22343d;
+}
+
+.footer-wrap-stuff-list {
+
+}
+
+.footer-wrap-stuff-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2.19;
+    color: #22343d;
+}
 
 .footer-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 47px;
 }
 
 .footer-form-text {
@@ -791,11 +922,18 @@ gap: 30px;
     font-size: 20px;
     line-height: 1.5;
     color: #22343d;
+    text-align: start;
     max-width: 280px;
     margin-bottom: 30px;
 }
 
-input {
+.footer-form-label {
+    position: relative;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.footer-form-input {
     border: 1px solid #bcd0e5;
     border-radius: 4px;
     width: 325px;
@@ -806,26 +944,20 @@ input {
     padding-left: 42px;
 }
 
-input::placeholder {
+.footer-form-input::placeholder {
     font-size: 16px;
     line-height: 1.75;
     color: #02897a;
     border: none;
     outline: none;
-
 }
 
-label {
-    position: relative;
-    margin-bottom: 25px;
-    display: block;
-}
-
-.svg {
+.footer-form-svg {
     position: absolute;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
+    fill: #02897a;
 }
 
 .footer-btn {
@@ -839,27 +971,4 @@ label {
     height: 39px;
     display: block;
     border: none;
-}
-
-.footer {
-    padding: 100px 145px 40px 145px;
-}
-
-.socials {
-
-}
-
-.footer-logo {
-    margin-bottom: 18px;
-}
-
-.socials-list {
-    display: inline;
-}
-
-.socialc-item {
-    stroke-width: 2px;
-    stroke: #02897a;   
-    display: flex;
-    gap: 8px
 }

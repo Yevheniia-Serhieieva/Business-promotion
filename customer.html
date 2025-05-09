@@ -5,175 +5,292 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business promotion - Customer</promotion-Customer></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/customer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="./index.html">
-            <img src="./images/logo.svg" alt="Logo" width="40" height="36">
-            Product
-        </a>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Product</a></li>
-                <li><a href="./pricing.html">Pricing</a></li>
-                <li><a href="./customer.html">Customers</a></li>
-                <li><a href="">Resources</a></li>      
+    <header class="header">
+        <div class="container header-container">
+            <a href="./index.html" class="header-logo">
+                <img src="./images/logo.svg" alt="Logo" width="40" height="36">
+                Product
+            </a>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li><a class="header-nav-link" href="./index.html">Product</a></li>
+                    <li><a class="header-nav-link" href="./pricing.html">Pricing</a></li>
+                    <li><a class="header-nav-link header-nav-link-active" href="./customer.html">Customers</a></li>
+                    <li><a class="header-nav-link" href="">Resources</a></li>
+                </ul>
+            </nav>
+            <ul class="header-btn-list">
+                <li><button class="header-btn-in" type="button">Sign In</button></li>
+                <li><button class="header-btn-up" type="button">Sign Up</button></li>
             </ul>
-        </nav>
-        <ul>
-            <li><button type="button">Sign In</button></li>
-            <li><button type="button">Sign Up</button></li>
-        </ul>
+        </div>
     </header>
 
     <main>
         <!-- Clients -->
-        <section>
-            <h1>Our Clients</h1>
-            <ul>
-                <li><img src="./images/Airbnb Logo.svg" alt="Airbnb Logo"></li>
-                <li><img src="./images/Google Logo.svg" alt="Google Logo"></li>
-                <li><img src="./images/Microsoft Logo.svg" alt="Microsoft Logo"></li>
-                <li><img src="./images/FedEx Logo.svg" alt="FedEx Logo"></li>
-            </ul> 
+        <section class="clients">
+            <div class="container clients-container">
+                <h1 class="clients-title">Our Clients</h1>
+                    <ul class="client-list">
+                        <li class="clients-item">
+                            <svg width="159" height="50">
+                                <use href="./images/icons.svg#icon-airbnb-logo"></use>
+                            </svg>
+                        </li>
+                        <li class="clients-item">
+                            <svg width="146" height="50">
+                                <use href="./images/icons.svg#icon-google-logo"></use>
+                            </svg>
+                        </li>
+                        <li class="clients-item">
+                            <svg width="213" height="44">
+                                <use href="./images/icons.svg#icon-microsoft-logo"></use>
+                            </svg>
+                        </li>
+                        <li class="clients-item">
+                            <svg width="140" height="42">
+                                <use href="./images/icons.svg#icon-fedex-logo"></use>
+                            </svg>
+                        </li>
+                    </ul>
+            </div> 
         </section>
 
         <!-- Choose -->
-         <section>
-            <h2>Why Choose Product?</h2>
-            <ul>
-                <li>
-                    <img src="./images/icon-1.svg" alt="Icon 1">
-                    <h3>Special Business</h3>
-                    <p>
-                        Product helps you see how many more days you need to work to reach your financial goal for the month and year.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/icon-2.svg" alt="Icon 2">
-                    <h3>Instant Result</h3>
-                    <p>
-                        Product helps you see how many more days you need to work to reach your financial goal for the month and year.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/icon (3).svg" alt="Icon 3">
-                    <h3>Fastest way to organize</h3>
-                    <p>
-                        Product helps you see how many more days you need to work to reach your financial goal for the month and year.
-                    </p>
-                </li>
-            </ul>
-         </section>
+        <section class="choose">
+            <div class="container choose-container">
+                <h2 class="choose-title">Why Choose Product?</h2>
+                <ul class="choose-list">
+                    <li class="choose-item">
+                        <div class="choose-item-svg">
+                            <svg width="12" height="18">
+                                <use href="./images/icons.svg#icon-cursor"></use>
+                            </svg>
+                        </div>
+                        <h3 class="choose-item-title">Special Business</h3>
+                        <p class="choose-item-text">
+                            Product helps you see how many more days you need to work to reach your financial goal for the month and year.
+                        </p>
+                    </li>
+                    <li class="choose-item">
+                        <div class="choose-item-svg">
+                            <svg width="18" height="18">
+                                <use href="./images/icons.svg#icon-wave"></use>
+                            </svg>
+                        </div>
+                        <h3 class="choose-item-title">Instant Result</h3>
+                        <p class="choose-item-text">
+                            Product helps you see how many more days you need to work to reach your financial goal for the month and year.
+                        </p>
+                    </li>
+                    <li class="choose-item">
+                        <div class="choose-item-svg">
+                            <svg width="16" height="18">
+                                <use href="./images/icons.svg#icon-heart"></use>
+                            </svg>
+                        </div>
+                        <h3 class="choose-item-title">Fastest way to organize</h3>
+                        <p class="choose-item-text">
+                            Product helps you see how many more days you need to work to reach your financial goal for the month and year.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
          <!-- Work -->
-          <section>
-            <h2>How Product Work?</h2>
-            <ul>
-                <li>
-                    <img src="./images/mac1.svg" alt="Mac 1" width="500" height="280">
-                    <h3>STEP 1</h3>
-                    <h3>Apply for a product</h3>
-                    <p>
-                        Completing our easy step-by-step application form gives you access to multiple business with multiple products. We analyse your business through our proprietary credit analysis technology 
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/mac2.svg" alt="Msc 2" width="500" height="280">
-                    <h3>STEP 2</h3>
-                    <h3>Pay fully refundable</h3>
-                    <p>
-                        Product will contactting you instantly to receive payment of the Application Fee. if no offer of product is available, your fee will be fully refunded.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/mac3.svg" alt="Mac 3" width="500" height="280">
-                    <h3>STEP 3</h3>
-                    <h3>Completion</h3>
-                    <p>
-                        Product will continue to liase between borrower and manager to procees and complete a quick and efficient settlement
-                    </p>
-                </li>
-            </ul>
-            <button type="button">Get in touch with us</button>
-          </section>
+        <section class="work">
+            <div class="container work-container">
+                <h2 class="work-title">How Product Work?</h2>
+                <ul class="work-list">
+                    <li class="work-item">
+                        <div class="work-wrap">
+                            <img src="./images/mac1.jpg"
+                                alt="Mac 1"
+                                width="500"
+                                height="280">
+                            <div class="work-wrap-text">
+                                <h3 class="work-item-title">STEP 1</h3>
+                                <h4 class="work-item-main-title">Apply for a product</h4>
+                                <p class="work-item-text">
+                                    Completing our easy step-by-step application form gives you access to multiple business with multiple products. We analyse your business through our proprietary credit analysis technology
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="work-item">
+                        <div class="work-wrap">
+                            <div class="work-wrap-text">
+                                <h3 class="work-item-title">STEP 2</h3>
+                                <h4 class="work-item-main-title">Pay fully refundable</h4>
+                                <p class="work-item-text">
+                                    Product will contactting you instantly to receive payment of the Application Fee. if no offer of product is available, your fee will be fully refunded.
+                                </p>
+                            </div>
+                            <img src="./images/mac2.jpg" 
+                                alt="Msc 2" 
+                                width="500" 
+                                height="280">
+                        </div>
+                    </li>
+                    <li class="work-item">
+                        <div class="work-wrap">
+                            <img src="./images/mac3.jpg" 
+                                alt="Mac 3" 
+                                width="500" 
+                                height="280">
+                            <div class="work-wrap-text">
+                                <h3 class="work-item-title">STEP 3</h3>
+                                <h4 class="work-item-main-title">Completion</h4>
+                                <p class="work-item-text">
+                                    Product will continue to liase between borrower and manager to procees and complete a quick and efficient settlement
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="work-btn" type="button">Get in touch with us</button>
+            </div>
+        </section>
 
           <!-- Offers -->
-          <section>
-            <h2>Join thousand of other who have already received offers</h2>
-            <ul>
-                <li>
-                    <img src="./images/Placeholder.svg" alt="Placeholder">
-                    <h3>Business</h3>
-                    <ul>
-                        <li>Cash Flow</li>
-                        <li>Asset Backed</li>
-                        <li>Receivables Finance</li>
-                    </ul>
-                    <p>Find the best business product</p>
-                </li>
-                <li>
-                    <img src="./images/Placeholder2.svg" alt="Placeholder 2">
-                    <h3>Enterprise</h3>
-                    <ul>
-                        <li>Site Acquisition</li>
-                        <li>Bridge </li>
-                        <li>Development Financing</li>
-                    </ul>
-                    <p>Find the best business product</p>
-                </li>
-            </ul>
-          </section>
+        <section class="offers">
+            <div class="container offers-container">
+                <h2 class="offers-title">Join thousand of other who have already received offers</h2>
+                <ul class="offers-list">
+                    <li class="offers-item">
+                        <div class="offers-item-svg">
+                            <img src="./images/activity.svg" alt="activity">
+                        </div>
+                        <h3 class="offers-item-title">Business</h3>
+                        <ul class="offers-item-list">
+                            <li class="offers-item-item">Cash Flow</li>
+                            <li class="offers-item-item">Asset Backed</li>
+                            <li class="offers-item-item">Receivables Finance</li>
+                        </ul>
+                        <p class="offers-item-text">Find the best business product</p>
+                    </li>
+                    <li class="offers-item">
+                        <div class="offers-item-svg">
+                            <img src="./images/chart.svg" alt="chart">
+                        </div>
+                        <h3 class="offers-item-title">Enterprise</h3>
+                        <ul class="offers-item-list">
+                            <li class="offers-item-item">Site Acquisition</li>
+                            <li class="offers-item-item">Bridge </li>
+                            <li class="offers-item-item">Development Financing</li>
+                        </ul>
+                        <p class="offers-item-text">Find the best business product</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <div>
-            <p>
-                Join 100 Compannies who boost their business with Product
-            </p>
-            <button type="button">Get This</button>
-            <img src="./images/graphics.png" alt="Graphics">
-        </div>
-        <div>
-            <a href="./index.html">
-                <img src="./images/logo.svg" alt="Logo" width="40" height="36">
-                Product
-            </a>
-            <ul>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="./images/item-1.png" alt="Instagram">
-                </a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="./images/item-2.png" alt="Facebook">
-                </a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="./images/item-3.png" alt="Twiter">
-                </a></li>
-            </ul>
-            <p>Resource</p>
-            <ul>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">FAQ</a></li>
-            </ul>
-            <p>Legal Stuff</p>
-            <ul>
-                <li><a href="">Disclaimer</a></li>
-                <li><a href="">Financing</a></li>
-                <li><a href="">Privacy Policy</a></li>
-            </ul>
-            <p>
-                knowing you're always on the best energy deal. 
-            </p>
-            <img src="./images/mobile-screen.svg" alt="mobile-screen">
-            <form action="">Enter your phone number
-                <button type="submit">Sign up Now</button>
-                </form>   
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-box">
+                <div class="footer-box-item">
+                    <p class="footer-box-text">
+                        Join 100 Compannies who boost their business with Product
+                    </p>
+                    <button class="footer-box-btn" type="button">Get This</button>
+                </div>
+                <img src="./images/graphics.png" alt="Graphics">
+            </div>
+            <div class="footer-wrap">
+                <div class="footer-wrap-socials">
+                    <a href="./index.html" class="footer-logo">
+                        <img src="./images/logo.svg" alt="Logo" width="40" height="36">
+                        Product
+                    </a>
+                    <div class="footer-wrap-socials-list">
+                        <ul class="footer-wrap-socials-list">
+                            <li class="footer-wrap-socials-item">
+                                    <a href="http://" 
+                                        target="_blank" 
+                                        aria-label="instagram-link" 
+                                        rel="noopener noreferrer">
+                                    <svg width="24" height="24">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                    </a>
+                            </li>
+                            <li class="footer-wrap-socials-item">
+                                    <a href="http://" 
+                                        target="_blank" 
+                                        aria-label="facebook-link"
+                                        rel="noopener noreferrer">
+                                    <svg width="24" height="24">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                    </a>
+                            </li>
+                            <li class="footer-wrap-socials-item">
+                                    <a href="http://" 
+                                        target="_blank" 
+                                        aria-label="twitter-link"
+                                        rel="noopener noreferrer">
+                                    <svg width="24" height="24">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-wrap-resource">
+                    <p class="footer-wrap-resource-title">Resource</p>
+                    <ul class="footer-wrap-resource-list">
+                        <li class="footer-wrap-resource-item">
+                            <a href="">About Us</a>
+                        </li>
+                        <li class="footer-wrap-resource-item">
+                            <a href="">Blog</a>
+                        </li>
+                        <li class="footer-wrap-resource-item">
+                            <a href="">Contact</a>
+                        </li>
+                        <li class="footer-wrap-resource-item">
+                            <a href="">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-wrap-stuff">
+                    <p class="footer-wrap-stuff-title">Legal Stuff</p>
+                    <ul class="footer-wrap-stuff-list">
+                        <li class="footer-wrap-stuff-item">
+                            <a href="">Disclaimer</a>
+                        </li>
+                        <li class="footer-wrap-stuff-item">
+                            <a href="">Financing</a>
+                        </li>
+                        <li class="footer-wrap-stuff-item">
+                            <a href="">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-form">
+                    <p class="footer-form-text">
+                        knowing you're always on the best energy deal.
+                    </p>
+                    <form>
+                            <label class="footer-form-label" for="user-phone">
+                                <input class="footer-form-input" type="tel" name="user-phone" placeholder="Enter your phone number">
+                                <svg class="footer-form-svg" width="18" height="28">
+                                    <use href="./images/icons.svg#icon-mobile-screen"></use>
+                                </svg>
+                            </label>
+                        <button class="footer-btn" type="submit">Sign up Now</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
